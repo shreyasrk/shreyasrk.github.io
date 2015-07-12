@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Test-Driven Development: My Way!</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/theme/css/main.css" type="text/css" />
+   
+
+        <!--[if IE]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+        <!--[if lte IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="/css/ie.css"/>
+                <script src="/js/IE8.js" type="text/javascript"></script><![endif]-->
+
+        <!--[if lt IE 7]>
+                <link rel="stylesheet" type="text/css" media="all" href="/css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="">/tmp/blog </a></h1>
+                <nav><ul>
+                    <li ><a href="/category/attitude-friends.html">Attitude, Friends</a></li>
+                    <li ><a href="/category/bondage-friends-poke.html">Bondage, Friends, Poke</a></li>
+                    <li ><a href="/category/cinema.html">Cinema</a></li>
+                    <li ><a href="/category/coffee-creativity-idea.html">Coffee, Creativity, Idea</a></li>
+                    <li ><a href="/category/desire-infatuation.html">Desire, Infatuation</a></li>
+                    <li ><a href="/category/education-fees-singapore.html">Education, Fees, Singapore</a></li>
+                    <li ><a href="/category/friends.html">Friends</a></li>
+                    <li ><a href="/category/friends-learning-relationships.html">Friends, Learning, Relationships</a></li>
+                    <li ><a href="/category/learning-life-luck-singapore-suspense.html">Learning, Life, Luck, Singapore, Suspense</a></li>
+                    <li ><a href="/category/life-think-water.html">Life, Think, Water</a></li>
+                    <li ><a href="/category/lincoln-motivation.html">Lincoln, motivation</a></li>
+                    <li ><a href="/category/mind-power-nap-sleep.html">Mind, Power Nap, Sleep</a></li>
+                    <li ><a href="/category/misc.html">misc</a></li>
+                    <li ><a href="/category/story-suspense.html">Story, Suspense</a></li>
+                    <li class="active"><a href="/category/uncategorized.html">Uncategorized</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="test-driven-development-my-way.html" rel="bookmark"
+           title="Permalink to Test-Driven Development: My Way!">Test-Driven Development: My Way!</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-10-12T14:13:00+05:30">
+                Sat 12 October 2013
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="/author/curlyreggie.html">curlyreggie</a>
+        </address>
+<p>In <a href="/category/uncategorized.html">Uncategorized</a>. </p>
+<p>tags: <a href="/tag/code.html">Code</a><a href="/tag/development.html">Development</a><a href="/tag/software.html">Software</a><a href="/tag/testing.html">Testing</a></p></footer><!-- /.post-info -->      <p>It was a fun day. My tech lead just freaked out with the way I started
+to think - repetitive, narrowed and complicated. When you have a simple
+requirement to turn to code, I sat there generating data using code!
+When the <a class="reference external" href="http://en.wikipedia.org/wiki/Use_case">use-case</a> is to be
+tested, is it worth to sit and generalize code rather than taking sample
+data-sets directly? And what if, after hours of coding such a case, you
+find that it was fundamentally wrong?</p>
+<p>After pissing out people, I crashed into <a class="reference external" href="http://en.wikipedia.org/wiki/Test-driven_development">test-driven
+development</a>. I
+have no idea with it's literal intent is, but it might be to see if you
+write according to use-cases and not in a general fashion all the time.
+The approach simply rocks, as you narrow down to your need and not to
+any dependencies. No chains. Not to external factors. Just plain,
+functional development.</p>
+<div class="section" id="always-break-the-need-to-direct-samples-not-code-for-them">
+<h2>Always break the need to direct samples,&nbsp;not code for them</h2>
+<p>I totally irritated my senior here. He kept on insisting to use hard
+values but there I was, using the general data-set code. And then it
+boomed him off.&nbsp;Unnecessary complications of writing lines and lines of
+code can lead to a basic leak in achieving the purpose. Just take a
+simple set to begin with. It can be a
+<a class="reference external" href="http://en.wikipedia.org/wiki/Hash_table">HashMap</a>, a Dictionary, an
+array or a list. Just that. And fill in random, hard-coded data.</p>
+<p>Never code for random data! You may be handling a lot of data but not
+the intended data. And, you lose most of the use-cases.</p>
+</div>
+<div class="section" id="develop-functions-for-samples-generalize-them-later">
+<h2>Develop functions for samples. Generalize them later.</h2>
+<p>Instead of worrying about sample-generating code which won't be used at
+all later, why not focus on what objective you're intending to? The
+input set, operation(s) and the net result? There are implications in
+these. The use-case handling gets freakier. Change the samples, and the
+module behaves strangely. Add more lines inside, function crashes.
+Dependencies, external and internal blow up. And you thought input
+handling can do all of it. It was just the beginning.</p>
+</div>
+<div class="section" id="test-test-and-er-test">
+<h2>Test, Test and er.. Test.</h2>
+<p>Module development isn't easy. You've to address all of the various
+issues. And the solution? Testing. Test your functions. Change inputs.
+Change behavior. Comment code in between, see the difference. TEST ALL
+OF IT MANUALLY!!&nbsp;Automate these only if you've time. Use asserts to
+crash. Check how your code can be integrated into the main system after
+achieving success and drinking beer.</p>
+<p>And yes, test the main system after integration. The same old dependency
+problem, you see. And drink more to that.</p>
+</div>
+<div class="section" id="ask-for-help-even-if-you-re-a-geek">
+<h2>Ask for help, even if you're a geek</h2>
+<p>Internet was never this friendlier before.&nbsp;Are you looking up the
+correct sources for help?&nbsp;Are you using too much of unnecessary
+thinking? Can a single line solve your problem? Direct documentation
+look up is waste. Nobody has the time to sit, understand and then use
+their brains to get the problem solved,&nbsp;<em>unless&nbsp;</em>there's no direct
+help.&nbsp;You might not be searching properly either. Helpers blame
+questioners for this sole reason.</p>
+<p>The above should do your objective. Trust me, it cut down my working
+time to a quarter.</p>
+<p>TDD, my style. Bye.</p>
+</div>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
